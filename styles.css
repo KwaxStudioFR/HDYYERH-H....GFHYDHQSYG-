@@ -1,0 +1,528 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Container */
+.container {
+    width: 85%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header */
+header {
+    background: #003366; /* Bleu foncé */
+    color: #fff;
+    padding: 20px 0;
+    position: relative;
+    z-index: 10;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2.5em;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff6600; /* Orange vif */
+}
+
+/* Hero Section */
+.hero {
+    background: #003366; /* Bleu foncé */
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    background-image: url(''); /* Remplacez par une image de votre choix */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.btn-main {
+    background: #ff6600; /* Orange vif */
+    color: #fff;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    transition: background 0.3s;
+}
+
+.btn-main:hover {
+    background: #e55b00; /* Orange plus foncé */
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Projects Section */
+.projects {
+    background: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.projects h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #003366; /* Bleu foncé */
+}
+
+.project-card {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    text-align: left;
+    max-width: 300px;
+    margin: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: inline-block;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.project-card .btn {
+    background: #003366; /* Bleu foncé */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background 0.3s;
+}
+
+.project-card .btn:hover {
+    background: #ff6600; /* Orange vif */
+}
+
+/* Blog Page */
+.blog {
+    background: #fff;
+    padding: 60px 0;
+}
+
+.blog h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #003366; /* Bleu foncé */
+}
+
+.blog article {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin: 20px auto;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.blog article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.blog article h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.blog article p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.blog article a {
+    color: #003366; /* Bleu foncé */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.blog article a:hover {
+    color: #ffffff; /* Orange vif */
+}
+
+.blog .btn {
+    background: #003366; /* Bleu foncé */
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background 0.3s;
+}
+
+.blog .btn:hover {
+    background: #ff6600; /* Orange vif */
+}
+
+/* Single Article Page */
+.article {
+    background: #fff;
+    padding: 60px 20px;
+}
+
+.article h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #003366; /* Bleu foncé */
+}
+
+.article .meta {
+    font-size: 1em;
+    color: #666;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.article p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+/* Footer */
+footer {
+    background: #003366; /* Bleu foncé */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 1em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero h2 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .project-card {
+        padding: 15px;
+        max-width: 90%;
+    }
+
+    .project-card h3 {
+        font-size: 1.5em;
+    }
+
+    .project-card p {
+        font-size: 1em;
+    }
+
+    .blog h2 {
+        font-size: 2em;
+    }
+
+    .blog article {
+        padding: 15px;
+    }
+
+    .blog article h3 {
+        font-size: 1.5em;
+    }
+
+    .blog article p {
+        font-size: 1em;
+    }
+
+    .article h2 {
+        font-size: 2em;
+    }
+
+    .article p {
+        font-size: 1.1em;
+    }
+}
+
+/* Cadre de projets */
+
+.project-card {
+    position: relative; /* Nécessaire pour positionner le tag correctement */
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px;
+    background: #fff;
+    border-radius: 12px; /* Coins arrondis plus doux */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Ombre plus prononcée */
+    overflow: hidden; /* Assure que le contenu ne dépasse pas les bordures */
+}
+
+.tag {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #f5f5f5; /* Couleur de fond légèrement plus claire */
+    color: #555; /* Couleur du texte plus douce */
+    padding: 6px 12px;
+    border-radius: 20px; /* Forme arrondie du tag */
+    font-size: 12px; /* Taille de texte plus petite */
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Ombre pour effet de profondeur */
+    z-index: 10; /* Assure que le tag est au-dessus du contenu */
+    white-space: nowrap; /* Empêche le texte de se casser en plusieurs lignes */
+    overflow: hidden; /* Assure que le texte long ne déborde pas */
+    text-overflow: ellipsis; /* Ajoute des points de suspension si le texte est trop long */
+}
+
+.project-card h3 {
+    margin-top: 50px; /* Augmente l'espace en haut pour éviter que le tag n'interfère avec le titre */
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/*Cadre d'articles*/
+
+.article-card {
+    position: relative; /* Nécessaire pour positionner le tag correctement */
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px 0;
+    background: #fff;
+    border-radius: 12px; /* Coins arrondis pour un look moderne */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Ombre pour donner de la profondeur */
+    overflow: hidden; /* Assure que le contenu ne dépasse pas les bordures */
+}
+
+.article-card .tag {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #f5f5f5; /* Couleur de fond du tag */
+    color: #555; /* Couleur du texte */
+    padding: 6px 12px;
+    border-radius: 20px; /* Forme arrondie du tag */
+    font-size: 12px; /* Taille du texte plus petite */
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Ombre pour l'effet de profondeur */
+    z-index: 10; /* Assure que le tag est au-dessus du contenu */
+    white-space: nowrap; /* Empêche le texte de se casser en plusieurs lignes */
+    overflow: hidden; /* Assure que le texte long ne déborde pas */
+    text-overflow: ellipsis; /* Ajoute des points de suspension si le texte est trop long */
+}
+
+.article-card h3 {
+    margin-top: 40px; /* Espace pour éviter que le tag n'interfère avec le titre */
+}
+
+.meta {
+    font-style: italic;
+    color: #777; /* Couleur subtile pour la méta-information */
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: #ffffff;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #ffffff;
+}
+
+/* Cadre alert ( Alert Box ) */
+
+.alert-box {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: rgba(255, 119, 0, 0.627); /* Rouge avec une teinte */
+    color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 300px;
+    z-index: 1000;
+}
+
+.alert-content {
+    display: flex;
+    align-items: center;
+}
+
+.alert-icon {
+    font-size: 24px;
+    margin-right: 15px;
+}
+
+.alert-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.alert-text strong {
+    font-size: 16px;
+}
+
+.alert-text p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #ffffff; /* Texte légèrement plus clair */
+}
+
+a { color: rgb(255, 255, 255); }
+
+/* Notre équipe */
+
+section.team {
+    padding: 40px 20px;
+}
+
+section.team .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.team-member {
+    background-color: white;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover .profile-pic {
+    transform: scale(1.1);
+}
+
+h2 {
+    margin: 0;
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+}
+
+.team-member:hover h2 {
+    color: #D62176; /* Couleur de survol pour le nom */
+}
+
+.function-tag {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-weight: bold;
+    color: #D62176; /* Couleur de la fonction */
+    background-color: #f4f4f4;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+

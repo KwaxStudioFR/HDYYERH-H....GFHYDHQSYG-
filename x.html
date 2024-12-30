@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X - Kwax Studio</title>
+    <link rel="icon" href="./images/favicon.png" type="image/png">
+
+    <!--META BDD-->
+    <!-- Meta Tags pour Open Graph -->
+    <meta property="og:title" content="X - Kwax Studio" />
+    <meta property="og:description" content="Petite équipe dédiée à la création de projets uniques : applications, jeux vidéo, bots et bien plus" />
+    <meta property="og:image" content="https://pbs.twimg.com/profile_banners/1731211036357775360/1725917017/1500x500" />
+    <meta property="og:url" content="https://kwax.work.gd/x" />
+    <meta property="og:type" content="website" />
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="X - Kwax Studio" />
+    <meta name="twitter:description" content="Petite équipe dédiée à la création de projets uniques : applications, jeux vidéo, bots et bien plus." />
+    <meta name="twitter:image" content="https://pbs.twimg.com/profile_banners/1731211036357775360/1725917017/1500x500" />
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        .redirect-box {
+            position: relative;
+            background-color: white;
+            padding: 40px;
+            width: 400px;
+            text-align: center;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .counter {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        p {
+            color: #666;
+        }
+        img {
+            max-width: 100px; /* Ajuste la taille du logo */
+            margin-bottom: 20px; /* Espace entre l'image et le titre */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="redirect-box">
+        <div class="counter" id="counter">5</div>
+
+        <!-- Ajout du logo -->
+        <img src="https://i.pinimg.com/originals/07/24/88/0724884440e8ddd0896ff557b75a222a.gif" alt="GIF chargement">
+
+        <h1>Redirection en cours...</h1>
+        <p>Vous allez être redirigé sur <b>X</b> dans quelques instants</p>
+    </div>
+
+    <script>
+        let countdown = 5;
+        const counterElement = document.getElementById('counter');
+
+        const interval = setInterval(() => {
+            countdown--;
+            counterElement.textContent = countdown;
+
+            if (countdown === 0) {
+                clearInterval(interval);
+                window.location.href = "https://x.com/kwaxstudio"; // Remplacez cette URL par votre URL de destination
+            }
+        }, 1000);
+    </script>
+
+</body>
+</html>
